@@ -9,7 +9,7 @@ with DAG(
     start_date=pendulum.datetime(2024, 2, 1, tz="Asia/Seoul"),
     catchup=False,
 ) as dag:
-    
+
     t1 = EmptyOperator(task_id="t1")
     t2 = EmptyOperator(task_id="t2")
     t3 = EmptyOperator(task_id="t3")
