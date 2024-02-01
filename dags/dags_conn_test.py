@@ -1,7 +1,7 @@
 from airflow import DAG
 import pendulum
 import datetime
-import airflow.operators.empty import EmptyOperator
+from airflow.operators.empty import EmptyOperator
 
 with DAG(
     dag_id="dag_conn_test",
