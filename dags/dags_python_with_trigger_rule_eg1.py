@@ -16,7 +16,7 @@ with DAG(
         task_id='bash_upstream_1',
         bash_command='echo "bash_upstream_1"',
     )
-
+ 
     @task(task_id='python_upstream_1')
     def python_upstream_1():
         raise AirflowException('downstream_1 Exception!')
